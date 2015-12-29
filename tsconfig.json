@@ -3,7 +3,6 @@
         "target": "es5",
         "module": "amd",
         "sourceMap": true,
-        "outDir": "build",
-        "watch":true
+        "outDir": "build/scripts"
     }
 }

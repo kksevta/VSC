@@ -5,7 +5,7 @@ module.exports = function (grunt) {
                 command: 'tsc'
             },
             copytoapache: {
-                command: 'cp -r /home/kuldeepk/Desktop/testingVS/build/. /var/www/test.kuldeep.com/public_html/'
+                command: 'cp -r /home/kuldeep/Desktop/VisualStudioCode/VSC/build/. /var/www/test.kuldeep.com/public_html/'
             }
         },
         watch: {
@@ -19,5 +19,5 @@ module.exports = function (grunt) {
     });
     grunt.loadNpmTasks('grunt-shell');
     grunt.loadNpmTasks('grunt-contrib-watch');
-    grunt.registerTask('default', ['shell', 'watch']);
+    grunt.registerTask('default', ['shell:buildtsc','shell:copytoapache', 'watch']);
 };
