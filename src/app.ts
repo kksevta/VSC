@@ -1,0 +1,13 @@
+class Myclass{
+ 
+ constructor(){
+     
+ }
+ 
+ method(){
+     
+     
+     
+ }
+    
+}
